@@ -31,9 +31,12 @@ public class Studente {
     }
     // stampa del nome dello studente e del suo voto
     public void stampaDettagli() {
-        System.out.println(getNome()+" "+ getVoto());
+        System.out.println("Studente : " +this.getNome()+ " Voto " +this.getVoto());
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return "Studente [nome=" + nome + ", voto=" + voto + "]";
+    }
+  
 }
