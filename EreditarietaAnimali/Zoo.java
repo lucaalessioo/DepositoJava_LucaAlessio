@@ -23,7 +23,7 @@ public class Zoo {
             System.out.print("Scelta: ");
 
             int scelta = scanner.nextInt();
-            scanner.nextLine(); // consuma newline
+            scanner.nextLine(); 
 
             switch (scelta) {
                 case 1 -> aggiungiAnimaleDaInput();
@@ -50,7 +50,7 @@ public class Zoo {
         int eta = scanner.nextInt();
         System.out.print("È malato? (true/false): ");
         boolean malato = scanner.nextBoolean();
-        scanner.nextLine(); // consuma newline
+        scanner.nextLine(); 
 
         switch (tipo) {
             case "cane" -> cani.add(new Cane(nome, eta, malato));
